@@ -21,4 +21,3 @@ public:
 	int trungvi(int* a, int k);
 	~Change();
 };
-

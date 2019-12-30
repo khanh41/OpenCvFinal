@@ -87,16 +87,14 @@ int Change::trungvi(int* a, int k) {
 
 Change::~Change()
 {
-	for (int i = 0; i < rows; i++) {
-		for (int j = 0; j < rows; j++) {
+	for (int i = 0; i < cols; i++) {
+		for (int j = 0; j < 3; j++) {
 			delete[] a[i][j];
 			delete[] b[i][j];
 		}
-		for (int i = 0; i < rows; i++) {
 			delete[] a[i];
-			delete[] a[i];
-		}
-		delete[] a;
-		delete[] b;
+			delete[] b[i];	
 	}
+	delete[] a;
+	delete[] b;
 }

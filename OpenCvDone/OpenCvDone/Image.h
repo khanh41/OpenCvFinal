@@ -21,4 +21,3 @@ public:
 	Image(const Image&);
 	void showImage();
 };
-

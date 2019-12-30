@@ -39,6 +39,3 @@ void Image::showImage()
 	imshow("After", imageDst);
 	imwrite("OutputImage.png", imageDst);
 }
-
-
-
