@@ -2,6 +2,7 @@
 #include<iostream>
 #include <iomanip>
 #include"Image.h"
+#include <fstream>
 using namespace std;
 #define CHANNEL_RGB_COLOR 3
 #define CHANNEL_R_COLOR 0

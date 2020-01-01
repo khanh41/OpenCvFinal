@@ -34,6 +34,9 @@ Change::Change(const Change& change)
 
 void Change::output()
 {
+	ofstream outfile;
+	outfile.open("output.dat");
+
 	// PRINT PIXEL OF RED COLOR 
 	cout << "------------" << endl;
 	cout << "Before" << endl;
@@ -48,8 +51,12 @@ void Change::output()
 	cout << "------------" << endl;
 	for (int i = 0; i < rows; i++) {
 		for (int j = 0; j < cols; j++)
+		{
 			cout << setw(4) << b[i][j][CHANNEL_R_COLOR];
+			outfile << setw(4) << b[i][j][CHANNEL_R_COLOR];
+		}
 		cout << endl;
+		outfile << endl;
 	}
 }
 
