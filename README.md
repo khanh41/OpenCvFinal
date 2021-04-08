@@ -1,3 +1,6 @@
+# Clean Image 🛠
+- Remove image noise with median algorithm 🧼️.
+
 1) download OpenCV: https://opencv.org/releases.html
 2) Tại giao diện của Visual Studio, chọn Project Properties > Configuration Properties > C/C++ > General > Addition Include Directories, 
 ta thêm đường dẫn $(ProjectDir)\Lib\opencv\include 
